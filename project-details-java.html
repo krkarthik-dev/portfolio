@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - Library Management System</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    a {
+      color: #0d6efd;
+    }
+
+    a:hover {
+      color: #66b0ff;
+      text-decoration: none;
+    }
+
+    .header {
+      background-color: #1f1f1f;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+      padding: 1rem 0;
+    }
+
+    .back-btn {
+      text-decoration: none;
+      font-weight: 500;
+      color: #fff;
+      background-color: #0d6efd;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title h2,
+    .project-details-content h3 {
+      color: #fff;
+    }
+
+    .section-title p,
+    .project-details-content p,
+    .project-details-content li {
+      color: #ccc;
+    }
+
+    .badge {
+      font-size: 0.85rem;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border: none;
+      color: #e0e0e0;
+    }
+    /* Change accordion collapse arrow to white */
+.accordion-button::after {
+  filter: invert(1); /* inverts the arrow to white */
+}
+
+    .card a {
+      color: #0d6efd;
+    }
+
+    .accordion-button {
+      background-color: #1f1f1f;
+      color: #e0e0e0;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .accordion-body {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+    }
+
+    pre {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      border-top: 1px solid #333;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #0d6efd;
+    }
+
+    footer a:hover {
+      color: #66b0ff;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header sticky-top d-flex justify-content-center">
+    <a href="portfolio.html" class="back-btn">
+      <i class="bi bi-arrow-left"></i> Back to Projects
+    </a>
+  </header>
+
+  <main class="py-5">
+    <section class="project-details container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Library Management System</h2>
+        <p>A full-stack Library Management System built with Java Spring Boot (backend) and React.js (frontend). Manage books, authors, categories, and members efficiently.</p>
+      </div>
+
+      <div class="row gy-4">
+
+        <!-- Left Column -->
+        <div class="col-lg-4">
+          <div class="card mb-4 shadow-sm p-3">
+            <h5 class="card-title">Tech Stack</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-primary">Java</span>
+              <span class="badge bg-success">Spring Boot</span>
+              <span class="badge bg-info text-dark">React</span>
+              <span class="badge bg-warning text-dark">Maven</span>
+              <span class="badge bg-secondary">Node</span>
+              <span class="badge bg-dark">MIT License</span>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow-sm p-3">
+            <h5 class="card-title">Project Info</h5>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-calendar-check me-2"></i>2025</li>
+              <li><i class="bi bi-person-circle me-2"></i>Author: K R Karthik</li>
+              <li><i class="bi bi-github me-2"></i><a href="https://github.com/krkarthik-dev/LibraryManagement" target="_blank">GitHub Repository</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-8">
+          <div class="project-details-content">
+
+            <h3 class="mb-3">Project Overview</h3>
+            <p class="lead">A comprehensive Library Management System allowing users to manage books, authors, categories, and members with ease. Borrowing, returning, and searching books is simple and efficient.</p>
+
+            <div class="accordion mb-4" id="project-details-accordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#features" aria-expanded="true">
+                    <i class="bi bi-check-circle me-2"></i> Key Features
+                  </button>
+                </h2>
+                <div id="features" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Add, update, delete books</li>
+                      <li>Borrow and return books</li>
+                      <li>Search for books by title, author, or category</li>
+                      <li>Manage authors and categories</li>
+                      <li>User-friendly frontend built with React</li>
+                      <li>RESTful API backend with Spring Boot</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structure" aria-expanded="false" >
+                    <i class="bi bi-diagram-3 me-2"></i> Project Structure
+                  </button>
+                </h2>
+                <div id="structure" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+<pre>
+LibraryManagement/
+├── backend/  # Spring Boot backend
+│   ├── src/
+│   ├── pom.xml
+│   └── mvnw
+├── frontend/ # React frontend
+│   ├── src/
+│   ├── public/
+│   └── package.json
+├── README.md
+└── .gitignore
+</pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#installation" aria-expanded="false">
+                    <i class="bi bi-terminal me-2"></i> Installation
+                  </button>
+                </h2>
+                <div id="installation" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p><strong>Clone the Repository:</strong></p>
+<pre>
+git clone https://github.com/krkarthik-dev/LibraryManagement.git
+cd LibraryManagement
+</pre>
+                    <p><strong>Backend (Spring Boot):</strong></p>
+<pre>
+cd backend
+mvn clean install
+mvn spring-boot:run
+</pre>
+                    <p><strong>Frontend (React):</strong></p>
+<pre>
+cd frontend
+npm install
+npm start
+</pre>
+                    <p>Frontend runs on <code>http://localhost:3000</code> and connects to the backend API.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <h3>Technologies Used</h3>
+<div class="row g-3 mb-4">
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-file-earmark-code fs-2 mb-2"></i>
+    <p class="mb-0">Java</p>
+  </div>
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-cpu fs-2 mb-2"></i>
+    <p class="mb-0">Spring Boot</p>
+  </div>
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-braces fs-2 mb-2"></i>
+    <p class="mb-0">React.js</p>
+  </div>
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-database fs-2 mb-2"></i>
+    <p class="mb-0">MySQL/H2</p>
+  </div>
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-git fs-2 mb-2"></i>
+    <p class="mb-0">Git & GitHub</p>
+  </div>
+  <div class="col-6 col-md-4 text-center">
+    <i class="bi bi-box-seam fs-2 mb-2"></i>
+    <p class="mb-0">Maven & npm</p>
+  </div>
+  <a href="https://github.com/krkarthik-dev/LibraryManagement" target="_blank" class="btn btn-primary btn-lg">View Repository</a>
+</div>
+
+
+            
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p>© <strong>FolioOne</strong> All Rights Reserved</p>
+      <div class="d-flex justify-content-center gap-3 mb-2">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+    </div>
+  </footer> -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Resume - K R Karthik</title>
+    <meta name="description" content="Resume of K R Karthik - SDET" />
+    <meta
+      name="keywords"
+      content="SDET, QA, Selenium, Java, Salesforce, Automation, Resume"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - K R Karthik</title>
-  <meta name="description" content="Resume of K R Karthik - SDET">
-  <meta name="keywords" content="SDET, QA, Selenium, Java, Salesforce, Automation, Resume">
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+      /* Creative Resume Header */
+      .resume-header {
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: "Poppins", sans-serif;
+      }
 
-  <style>
-    /* Creative Resume Header */
-    .resume-header {
-      text-align: center;
-      margin-bottom: 50px;
-      font-family: 'Poppins', sans-serif;
-    }
+      .creative-title {
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #0d6efd;
+      }
 
-    .creative-title {
-      position: relative;
-      display: inline-block;
-      font-weight: 700;
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #0d6efd;
-    }
-
-    /* .creative-title::after {
+      /* .creative-title::after {
       content: "";
       position: absolute;
       left: 50%;
@@ -52,213 +66,273 @@
       border-radius: 5px;
     } */
 
-    .creative-name {
-      font-size: 28px;
-      font-weight: 600;
-      margin: 15px 0 10px 0;
-      color: #6f42c1;
-    }
-
-    .creative-summary {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 17px;
-      line-height: 1.6;
-      color: #d6e5f5;
-    }
-
-    @media (max-width: 768px) {
-      .creative-title {
-        font-size: 28px;
-      }
-
       .creative-name {
-        font-size: 22px;
+        font-size: 28px;
+        font-weight: 600;
+        margin: 15px 0 10px 0;
+        color: #6f42c1;
       }
 
       .creative-summary {
-        font-size: 16px;
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #d6e5f5;
       }
-    }
 
-    /* Progress bar styling */
-    .progress {
-      height: 10px;
-      background-color: #e9ecef;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
+      @media (max-width: 768px) {
+        .creative-title {
+          font-size: 28px;
+        }
 
-    .progress-bar {
-      background: linear-gradient(90deg, #0d6efd, #6f42c1);
-    }
-  </style>
-</head>
+        .creative-name {
+          font-size: 22px;
+        }
 
-<body class="resume-page">
+        .creative-summary {
+          font-size: 16px;
+        }
+      }
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      /* Progress bar styling */
+      .progress {
+        height: 10px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
 
-      <div class="header-social-links">
-        <a href="mailto:krkarthik02@gmail.com" class="envelope"><i class="bi bi-envelope"></i></a>
-        <a href="https://linkedin.com/in/krkarthik02" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
+      .progress-bar {
+        background: linear-gradient(90deg, #0d6efd, #6f42c1);
+      }
+    </style>
+  </head>
 
-    </div>
-  </header>
+  <body class="resume-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center light-background sticky-top"
+    >
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-  <main class="main">
-
-    <section id="resume" class="resume section">
-
-      <!-- Creative Resume Header -->
-      <div class="container resume-header" data-aos="fade-up">
-        <h2 class="creative-title">Resume</h2>
-        <h3 class="creative-name">Hi, I'm K R Karthik</h3>
-        <p class="creative-summary">
-          SDET with 2 years of hands-on experience in automation and manual testing for web and Salesforce applications. Proven track record of reducing regression time by optimizing automation pipelines and building reusable test frameworks.
-        </p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="resume-item" data-aos="fade-up">
-              <h3 class="resume-title">Education & Certifications</h3>
-              <div class="resume-content">
-
-                <article class="education-item">
-                  <h4>Master of Computer Applications (MCA)</h4>
-                  <h5>Jun 2024 - Present</h5>
-                  <p class="institution"><em>IGNOU | Delhi, India</em></p>
-                  <p>Currently pursuing Master's degree.</p>
-                </article>
-
-                <article class="education-item">
-                  <h4>Bachelor of Computer Applications (BCA)</h4>
-                  <h5>Jun 2020 - May 2023</h5>
-                  <p class="institution"><em>Mahatma Gandhi University | Kottayam, India</em></p>
-                  <p>Completed undergraduate studies with a focus on computer applications.</p>
-                </article>
-
-                <article class="education-item">
-                  <h4>Certification: Selenium WebDriver with Java</h4>
-                  <h5>2025</h5>
-                  <p class="institution"><em>Udemy</em></p>
-                  <p>Specialized training in test automation using Selenium WebDriver and Java.</p>
-                </article>
-
-              </div>
-            </div>
-
-            <div class="resume-item skills-animation" data-aos="fade-up">
-              <h3 class="resume-title">Professional Skills</h3>
-              <div class="resume-content">
-
-                <div class="skill-item">
-                  <h4>Test Automation (Selenium/TestNG)</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>Java Programming</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>Salesforce (Copado Robotic Testing)</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>SQL & Database Testing</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
-              <div class="resume-content">
-
-                <article class="experience-item">
-                  <h4>Associate Analyst (SDET)</h4>
-                  <h5>Jan 2024 - Present</h5>
-                  <p class="company"><em>Deloitte | Hyderabad, India</em></p>
-                  <ul>
-                    <li>Automated 120+ test cases for web and Salesforce applications using Selenium WebDriver, Java, and TestNG, reducing manual effort by 45%.</li>
-                    <li>Designed and maintained reusable automation frameworks, reducing script failures by 35%.</li>
-                    <li>Implemented Copado Robotic Testing (CRT) to validate end-to-end Salesforce workflows for 3+ major releases.</li>
-                    <li>Reduced regression execution time from 2 days to under 8 hours by optimizing automation pipelines.</li>
-                    <li>Resolved 50+ defects in coordination with developers and business analysts, including high-severity issues.</li>
-                    <li>Performed Functional, Regression, Integration, and System Integration Testing across 10+ user stories per sprint in an Agile environment.</li>
-                    <li>Identified untested scenarios and edge cases, improving overall test coverage by 60%.</li>
-                  </ul>
-                </article>
-
-              </div>
-            </div>
-
-          </div>
+        <div class="header-social-links">
+          <a href="mailto:krkarthik02@gmail.com" class="envelope"
+            ><i class="bi bi-envelope"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/krkarthik02"
+            target="_blank"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
         </div>
       </div>
+    </header>
 
-    </section>
+    <main class="main">
+      <section id="resume" class="resume section">
+        <!-- Creative Resume Header -->
+        <div class="container resume-header" data-aos="fade-up">
+          <h2 class="creative-title">Resume</h2>
+          <h3 class="creative-name">Hi, I'm K R Karthik</h3>
+          <p class="creative-summary">
+            SDET with 2 years of hands-on experience in automation and manual
+            testing for web and Salesforce applications. Proven track record of
+            reducing regression time by optimizing automation pipelines and
+            building reusable test frameworks.
+          </p>
+        </div>
 
-  </main>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="resume-item" data-aos="fade-up">
+                <h3 class="resume-title">Education & Certifications</h3>
+                <div class="resume-content">
+                  <article class="education-item">
+                    <h4>Master of Computer Applications (MCA)</h4>
+                    <h5>Jun 2024 - Present</h5>
+                    <p class="institution"><em>IGNOU | Delhi, India</em></p>
+                    <p>Currently pursuing Master's degree.</p>
+                  </article>
 
-  <footer id="footer" class="footer">
+                  <article class="education-item">
+                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                    <h5>Jun 2020 - May 2023</h5>
+                    <p class="institution">
+                      <em>Mahatma Gandhi University | Kottayam, India</em>
+                    </p>
+                    <p>
+                      Completed undergraduate studies with a focus on computer
+                      applications.
+                    </p>
+                  </article>
+
+                  <article class="education-item">
+                    <h4>Certification: Selenium WebDriver with Java</h4>
+                    <h5>2025</h5>
+                    <p class="institution"><em>Udemy</em></p>
+                    <p>
+                      Specialized training in test automation using Selenium
+                      WebDriver and Java.
+                    </p>
+                  </article>
+                </div>
+              </div>
+
+              <div class="resume-item skills-animation" data-aos="fade-up">
+                <h3 class="resume-title">Professional Skills</h3>
+                <div class="resume-content">
+                  <div class="skill-item">
+                    <h4>Test Automation (Selenium/TestNG)</h4>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <h4>Java Programming</h4>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <h4>Salesforce (Copado Robotic Testing)</h4>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <h4>SQL & Database Testing</h4>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-content">
+                  <article class="experience-item">
+                    <h4>Associate Analyst (SDET)</h4>
+                    <h5>Jan 2024 - Present</h5>
+                    <p class="company"><em>Deloitte | Hyderabad, India</em></p>
+                    <ul>
+                      <li>
+                        Automated 120+ test cases for web and Salesforce
+                        applications using Selenium WebDriver, Java, and TestNG,
+                        reducing manual effort by 45%.
+                      </li>
+                      <li>
+                        Designed and maintained reusable automation frameworks,
+                        reducing script failures by 35%.
+                      </li>
+                      <li>
+                        Implemented Copado Robotic Testing (CRT) to validate
+                        end-to-end Salesforce workflows for 3+ major releases.
+                      </li>
+                      <li>
+                        Reduced regression execution time from 2 days to under 8
+                        hours by optimizing automation pipelines.
+                      </li>
+                      <li>
+                        Resolved 50+ defects in coordination with developers and
+                        business analysts, including high-severity issues.
+                      </li>
+                      <li>
+                        Performed Functional, Regression, Integration, and
+                        System Integration Testing across 10+ user stories per
+                        sprint in an Agile environment.
+                      </li>
+                      <li>
+                        Identified untested scenarios and edge cases, improving
+                        overall test coverage by 60%.
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">K R Karthik</strong> <span>All Rights Reserved</span></p>
       </div>
-      <!-- <div class="social-links d-flex justify-content-center">
+      <div class="social-links d-flex justify-content-center">
         <a href="mailto:krkarthik02@gmail.com"><i class="bi bi-envelope"></i></a>
         <a href="https://linkedin.com/in/krkarthik02" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div> -->
+      </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <script src="assets/js/main.js"></script>
-
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
